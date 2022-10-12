@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Todo - Application</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1 class="header__title">Secure Todo Application</h1>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="actions__container">
+        <input
+          class="input"
+          id="new-todo-text"
+          type="text"
+          placeholder="Filter todo"
+        />
+
+        <label class="checkbox">
+          <input type="checkbox" id="check-completed" /> Hide completed
+        </label>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="to-dos"></div>
+      <form id="form-input">
+        <input
+          class="input"
+          type="text"
+          placeholder="first Name"
+          name="firstName"
+        />
+        <button class="button">Submit</button>
+      </form>
+    </div>
+
+    <script src="/scripts/todo-functions.js"></script>
+    <script src="/scripts/todo-app.js" type="module"></script>
+  </body>
+</html>
