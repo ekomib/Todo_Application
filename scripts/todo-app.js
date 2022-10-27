@@ -4,8 +4,6 @@ import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 
 renderTodo(todos, filter);
 
-
-
 document.querySelector("#new-todo-text").addEventListener("input", (e) => {
   filter.searchText = e.target.value;
   renderTodo(todos, filter);
@@ -32,5 +30,3 @@ document.querySelector("#check-completed").addEventListener("change", (e) => {
   filter.hideCompleted = e.target.checked;
   renderTodo(todos, filter);
 });
-
-
